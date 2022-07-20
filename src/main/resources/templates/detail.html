@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상세 정보보기</title>
+<link rel="stylesheet" th:href="@{/css/detail.css}">
+</head>
+<body>
+	<div class="content">
+		<h2>제품 상세보기</h2>
+		<table th:each="item: ${item}" class="item">
+			<tr>
+				<th>제품번호</th>
+				<td th:text="${item.p_num}">제품번호</td>
+			</tr>
+			<tr>
+				<th>제품명</th>
+				<td th:text="${item.p_name}">제품명</td>
+			</tr>
+			<tr>
+				<th>수량</th>
+				<td th:text="${item.amount}">수량</td>
+			</tr>
+			<tr>
+				<th>가격</th>
+				<td th:text="${item.price}">가격</td>
+			</tr>
+			<tr>
+				<th>비고</th>
+				<td><input type="button" value="담기"></td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>

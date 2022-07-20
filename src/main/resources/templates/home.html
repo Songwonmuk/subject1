@@ -3,13 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <title>홈화면</title>
+<link rel="stylesheet" th:href="@{/css/home.css}">
 </head>
 <body>
-	<h1>[ 홈 화면 ]</h1>
+<div class="content">
+	<h1>[ 묵 팡 ]</h1>
 	<hr>
 	<ol>
 		<li><a href="shopping">쇼핑하기</a></li>
 		<li><a href="orderlist">장바구니</a></li>
 	</ol>
+</div>
+<div class="bu">
+	<input type="button" value="로그인" id="login"> 
+			<input type="button" value="회원가입" id="signin">
+	</div>
 </body>
 </html>

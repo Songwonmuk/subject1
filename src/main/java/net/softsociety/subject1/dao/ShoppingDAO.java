@@ -11,4 +11,6 @@ public interface ShoppingDAO {
 
 	ArrayList<item> selectItem();
 
+	item selectOne(int p_num);
+
 }

@@ -24,4 +24,12 @@ public class ShoppingServiceImpl implements ShoppingService {
 		return list;
 	}
 
+	@Override
+	public item selectOne(int p_num) {
+
+		item tem = shoppingDAO.selectOne(p_num);
+		
+		return tem;
+	}
+
 }

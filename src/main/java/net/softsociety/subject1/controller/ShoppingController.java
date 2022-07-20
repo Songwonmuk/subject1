@@ -27,4 +27,14 @@ public class ShoppingController {
 		
 		return "shopping";
 	}
+	
+	@GetMapping("/detail")
+	public String detail(int p_num, Model model) {
+		
+		item tem = service.selectOne(p_num);
+		
+		model.addAttribute("item", tem);
+		
+		return "detail";
+	}
 }

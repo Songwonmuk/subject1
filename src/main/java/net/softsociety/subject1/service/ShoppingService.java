@@ -8,4 +8,6 @@ public interface ShoppingService {
 
 	public ArrayList<item> selectItem();
 
+	public item selectOne(int p_num);
+
 }
