@@ -7,10 +7,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Item {
 
-	public int p_num;
-	public String p_name;
-	public int amount;
-	public int price;
+public class Member {
+	String id;
+	String password;
+	String name;
+	String address;
+	
 }

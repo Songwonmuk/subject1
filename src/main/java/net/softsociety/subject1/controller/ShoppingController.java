@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import lombok.extern.slf4j.Slf4j;
 import net.softsociety.subject1.service.ShoppingService;
-import net.softsociety.subject1.vo.item;
+import net.softsociety.subject1.vo.Item;
 
 @Slf4j
 @Controller
@@ -21,7 +21,7 @@ public class ShoppingController {
 	@GetMapping("/shopping")
 	public String shopping(Model model) {
 		
-		ArrayList<item> list = service.selectItem();
+		ArrayList<Item> list = service.selectItem();
 		
 		model.addAttribute("list", list);
 		
@@ -31,7 +31,7 @@ public class ShoppingController {
 	@GetMapping("/detail")
 	public String detail(int p_num, Model model) {
 		
-		item tem = service.selectOne(p_num);
+		Item tem = service.selectOne(p_num);
 		
 		model.addAttribute("item", tem);
 		

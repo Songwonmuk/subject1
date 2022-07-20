@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
 import net.softsociety.subject1.dao.ShoppingDAO;
-import net.softsociety.subject1.vo.item;
+import net.softsociety.subject1.vo.Item;
 
 @Service
 @Slf4j
@@ -17,17 +17,17 @@ public class ShoppingServiceImpl implements ShoppingService {
 	public ShoppingDAO shoppingDAO;
 	
 	@Override
-	public ArrayList<item> selectItem() {
+	public ArrayList<Item> selectItem() {
 		
-		ArrayList<item> list = shoppingDAO.selectItem();
+		ArrayList<Item> list = shoppingDAO.selectItem();
 		
 		return list;
 	}
 
 	@Override
-	public item selectOne(int p_num) {
+	public Item selectOne(int p_num) {
 
-		item tem = shoppingDAO.selectOne(p_num);
+		Item tem = shoppingDAO.selectOne(p_num);
 		
 		return tem;
 	}

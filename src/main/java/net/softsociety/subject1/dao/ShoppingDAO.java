@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import net.softsociety.subject1.vo.item;
+import net.softsociety.subject1.vo.Item;
 
 @Mapper
 public interface ShoppingDAO {
 
-	ArrayList<item> selectItem();
+	ArrayList<Item> selectItem();
 
-	item selectOne(int p_num);
+	Item selectOne(int p_num);
 
 }

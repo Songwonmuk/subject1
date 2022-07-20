@@ -2,12 +2,12 @@ package net.softsociety.subject1.service;
 
 import java.util.ArrayList;
 
-import net.softsociety.subject1.vo.item;
+import net.softsociety.subject1.vo.Item;
 
 public interface ShoppingService {
 
-	public ArrayList<item> selectItem();
+	public ArrayList<Item> selectItem();
 
-	public item selectOne(int p_num);
+	public Item selectOne(int p_num);
 
 }

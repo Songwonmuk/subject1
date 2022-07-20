@@ -27,3 +27,10 @@ create table orderList(
 );
 
 create sequence orders_seq increment by 1 start with 1;
+
+create table member2(
+	id	varchar2(20)	not null,
+	password	varchar2(20) not null,
+	name	varchar2(20) not null,
+	address varchar2(100) not null
+);
