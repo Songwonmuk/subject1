@@ -1,0 +1,52 @@
+@charset "UTF-8";
+div.content{
+    width: 800px; /* block 태그에만 줄수 있다?*/
+   /* border: 1px solid gray;  solid dashed dotted */
+   /* margin-top: ;
+    margin-bottom: ;
+    margin-left: ;
+    margin-right: ; */
+    /*margin : 50 50 0 0; 상 우 하 좌*/
+    margin: 0 auto;
+}
+div.content>h1{
+    text-align: center;
+    color: white;
+    background-color: rgb(43, 139, 165);
+    padding: 30px 0 30px 0;
+    margin-bottom: 0;
+}
+div.bu{
+	text-align: center;
+	padding-top:20px;
+}
+table{
+    width: 800px;
+    border: 1px solid rgb(60, 144, 81);
+    border-collapse: collapse; /*칸과 칸사이여백 제거*/
+}
+tr, td, th{
+    border: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+th{
+    width: 200px;
+    background-color: rgb(177, 220, 220); color: aliceblue;
+}
+td{
+    padding-left: 10px;
+    text-align: center;
+}
+input[type="text"],input[type="password"],input[type="email"]{  /* 속성 및 주소 등 다양한 input중에 골라서 지정가능*/
+    width: 400px;
+    height: 20px;
+}
+
+
+select{width: 100px; height: 26px;}
+textarea{
+    width: 550px;
+    height: 100px;
+    resize: none;
+}
